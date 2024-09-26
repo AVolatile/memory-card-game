@@ -24,7 +24,8 @@ h1 {
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
-    transition: transform 0.5s;
+    transition: transform 0.7s ease;
+    transform-origin: center;
 }
 
 .memory-card.flip {
@@ -44,4 +45,26 @@ h1 {
 
 .back-face {
     background-color: #ecf0f1;
+}
+
+.move-counter, .timer {
+    color: #ecf0f1;
+    font-size: 24px;
+    text-align: center;
+}
+
+.restart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+}
+
+.restart-btn:hover {
+    background-color: #2980b9;
 }
